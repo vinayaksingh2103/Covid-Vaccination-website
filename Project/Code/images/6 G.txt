@@ -1,0 +1,7 @@
+STEP1 LOOD YOUR TEXT EDITOR AND ENTER THE FOLLOWING
+<!DOCTYPEhtml>
+<html>
+<head><title>apple<\title>
+<\head>
+<body><h1><b>talkingapple,\i><\h1>
+<hr><p><<i>hello my name is kshitij I was purshedby a little boy super

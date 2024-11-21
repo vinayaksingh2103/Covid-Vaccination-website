@@ -1,0 +1,123 @@
+<!--18SOECE11014-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="logo/favicon1.png"/>
+		
+    <link rel="icon" type="image/x-icon" href="../images/covid.png">
+		<title>Login | Covid vaccine availability</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/home.css">
+		<link rel="stylesheet" type="text/css" href="../css/form.css">
+        
+    </head>
+	<body class="bg-img">
+
+        <!-- navbar sections starts -------------------------------------------------------------------------------- -->
+        <header class="header">
+            <div class="logo">
+                <a href="./home.html"><img src="../images/logo.png" alt="logo-bookmark" id="logo"></a>
+            </div>
+    
+            <nav class="navbar">
+                <a href="./home.html">Home</a>
+                <a href="./faq.html" target="_blank">FAQs</a>
+                <a href="https://www.cowin.gov.in/" target="_blank">Certificate</a>
+                <a href="#footer">Contact</a>
+            </nav>
+        </header>
+        <!-- navbar sections ends  -->
+
+		<div class="registration-form">
+			<form class="A1" name="f">
+				<div class="registration-logo with-border">
+					<h4><b>Login</b></h4>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<input type="text" id="pin" name="fname" class="formcontrolitem" placeholder="Enter your pincode" required>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-13">
+					<div class="form-group">
+						<input type="text" id="date" name="bod" class="formcontrolitem" placeholder="DD-MM-YYYY" required>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-12">
+						<a href="response.html">
+                            <input type="button" name="submit" class="btn btn-block login-button" onClick="su()" value="Check Availability" id="sub">
+                        </a>
+					</div>
+				</div>
+			</form>
+		</div>
+
+        <!-- footer section starts  -->
+
+   <section class="footer" id="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="./home.html"><i class="fas fa-chevron-right"></i>home</a>
+            <a href="#"><i class="fas fa-chevron-right"></i>Check Availability</a>
+            <a href="https://cowin.gov.in/" target="_blank"><i class="fas fa-chevron-right"></i>Download Certificate</a>
+            <a href="./faq.html" target="_blank"><i class="fas fa-chevron-right"></i>Read FAQs</a>
+         </div>
+         
+<!--             
+         <div class="box">
+             <h3>our services</h3>
+             <a href="#"><i class="fas fa-chevron-right"></i>bookmark extension</a>
+             <a href="#"><i class="fas fa-chevron-right"></i>chrome themes</a>
+             <a href="#"><i class="fas fa-chevron-right"></i>firefox themes</a>
+             <a href="#"><i class="fas fa-chevron-right"></i>screen recorder extension</a>
+             <a href="#"><i class="fas fa-chevron-right"></i>screen shot extension</a>
+        </div> -->
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"><i class="fas fa-phone"></i>+91-11-23978046</a>
+            <a href="#"><i class="fas fa-phone"></i> 0120-4783222</a>
+            <a href="#"><i class="fas fa-envelope"></i>company@example.com</a>
+            <a href="#"><i class="fas fa-envelope"></i>company@example.com</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+        </div>
+    </div>
+
+
+    <div class="credit">created by me | &copy; all rights reserved</a>
+    </div>
+</section>
+
+ <!-- footer section ends -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+		<script src="../js/script.js"></script>
+		<script>
+			function su(){
+            var pincode=f.pin.value
+            var dat=f.date.value
+            localStorage.setItem('pin',pincode)
+            localStorage.setItem('date',dat)
+    }
+		</script>
+
+		<!-- <script type="text/javascript" src="js/bootstrap-select-country.min.js"></script> -->
+        <!-- https://github.com/imparthgalani/User-Form/blob/master/registration.html -->
+	</body>
+</html>

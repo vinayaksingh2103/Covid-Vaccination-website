@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Matteo Bruni">
+    <title>Signin Template - tsParticles</title>
+
+    <!-- Custom styles for this template -->
+    <link href="css/particles.css" rel="stylesheet"/>
+    <link href="home.css" rel="stylesheet"/>
+    <link href="form.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <!-- navbar sections starts  -->
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo-bookmark.svg" alt="logo-bookmark">
+        </div>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="faq1.html" target="_blank">FAQs</a>
+            <a href="#download">Download</a>
+            <a href="#footer">Contact</a>
+        </nav>
+    </header>
+    <!-- navbar sections ends  -->  
+
+
+<main class="boxi">
+    <h2>Login</h2>
+    <form name="f">
+        <div class="inputBox">
+            <label>Pincode</label>
+            <input type="number" name="pin" id="userName" placeholder="Enter your pincode" required/>
+        </div>
+        <div class="inputBox">
+            <label>Date of Appointment</label>
+            <input type="text" name="date" id="userPassword" placeholder="dd-mm-yyyy"
+                   required/>
+        </div>
+        <div>
+            <a href="response.html"><input type=button onclick="sub()" value="Check Availability" />
+        </div>
+    </form>
+</main>
+
+
+<!-- footer section starts  -->
+
+<section class="footer" id="footer">
+<div class="box-container">
+    <div class="box">
+        <h3>quick links</h3>
+        <a href="#"><i class="fas fa-chevron-right"></i>home</a>
+        <a href="#"><i class="fas fa-chevron-right"></i>Check Availability</a>
+        <a href="#"><i class="fas fa-chevron-right"></i>Download Certificate</a>
+        <a href="#"><i class="fas fa-chevron-right"></i>Read FAQs</a>
+     </div>
+     
+<!--             
+     <div class="box">
+         <h3>our services</h3>
+         <a href="#"><i class="fas fa-chevron-right"></i>bookmark extension</a>
+         <a href="#"><i class="fas fa-chevron-right"></i>chrome themes</a>
+         <a href="#"><i class="fas fa-chevron-right"></i>firefox themes</a>
+         <a href="#"><i class="fas fa-chevron-right"></i>screen recorder extension</a>
+         <a href="#"><i class="fas fa-chevron-right"></i>screen shot extension</a>
+    </div> -->
+
+    <div class="box">
+        <h3>contact info</h3>
+        <a href="#"><i class="fas fa-phone"></i>+91-11-23978046</a>
+        <a href="#"><i class="fas fa-phone"></i> 0120-4783222</a>
+        <a href="#"><i class="fas fa-envelope"></i>company@example.com</a>
+        <a href="#"><i class="fas fa-envelope"></i>company@example.com</a>
+    </div>
+
+    <div class="box">
+        <h3>follow us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+    </div>
+</div>
+
+
+<div class="credit">created by
+    <a href="https://www.youtube.com/channel/UCK5YMqyy_fjAtwgu9hjxXJg" target="_blank"><span>Pranav Raj</span> | all rights reserved</a>
+</div>
+</section>
+
+<!-- footer section ends -->
+
+<script src="home.js"></script>
+<script>
+    function sub(){
+            var pincode=f.pin.value
+            var dat=f.date.value
+            localStorage.setItem('pin',pincode)
+            localStorage.setItem('date',dat)
+    }
+</script>
+</body>
+</html>
